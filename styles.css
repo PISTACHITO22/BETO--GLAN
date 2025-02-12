@@ -1,0 +1,163 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sección Hero */
+#hero {
+    text-align: center;
+    padding: 50px;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-high-grade-black-jewelry-luxurious-image_17324.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+/* Estilos de productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.categoria {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* Carrito de compras */
+#carrito {
+    padding: 20px;
+    text-align: center;
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Sección de comentarios */
+#comentarios {
+    padding: 20px;
+    text-align: center;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#commentForm input, #commentForm textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#commentsSection {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.comment {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
